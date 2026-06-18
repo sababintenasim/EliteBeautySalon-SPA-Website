@@ -1,0 +1,30 @@
+@import "tailwindcss";
+
+@theme {
+  --color-brand-black: #0f0f0f;
+  --color-brand-gold: #c3a372;
+  --color-brand-light: #fdfdfd;
+  --color-brand-gray: #f3f3f3;
+  --font-heading: 'Optima', 'Didot', 'Times New Roman', serif;
+  --font-body: 'Proxima Nova', 'Inter', sans-serif;
+}
+
+body {
+  @apply bg-brand-light text-brand-black font-body overflow-x-hidden;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  @apply font-heading tracking-wide;
+}
+
+.luxury-gradient {
+  background: linear-gradient(135deg, #1f1f1f 0%, #000000 100%);
+}
+
+.gold-gradient {
+  background: linear-gradient(135deg, #d4af37 0%, #aa7c11 100%);
+}
+
+.section-padding {
+  @apply py-20 md:py-32 px-6 md:px-12 lg:px-24;
+}
